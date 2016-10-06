@@ -8,7 +8,7 @@ cd baseimage/
 docker build --build-arg SECRET_KEY=<your secret URL part from https://support.libreoffice.collabora.co.uk> -t collabora/online-base .
 docker run -d collabora/online-base
 # Adjust the container id <hash>
-docker export <hash> -o /tmp/collabora-flat
+docker export -o /tmp/collabora-flat <hash>
 docker import /tmp/collabora-flat collabora/online-flattened
 ```
 
