@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ubuntu:16.04
 
 # Environment variables
 ARG SECRET_KEY

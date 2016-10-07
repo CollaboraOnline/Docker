@@ -10,7 +10,7 @@ apt-get -y install apt-transport-https
 apt-get -y install locales-all
 
 # Add Collabora repos
-echo "deb https://collaboraoffice.com/repos/CollaboraOnline/customer-debian8-${SECRET_KEY} /" >> /etc/apt/sources.list.d/collabora.list
+echo "deb https://collaboraoffice.com/repos/CollaboraOnline/customer-ubuntu1604-${SECRET_KEY} /" >> /etc/apt/sources.list.d/collabora.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0C54D189F4BA284D
 apt-get update
 
