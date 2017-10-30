@@ -20,6 +20,11 @@ apt-get update
 # Install the Collabora packages
 apt-get -y install loolwsd collabora-online-brand
 
+# Ubuntu stock libreoffice installs myspell-{et,lv} as dependency
+apt-get remove myspell-*
+# Install requested dictionaries
+apt-get -y install $(for dict in ${DICTIONARIES:-en-us}; do echo myspell-$dict; done)
+
 # Cleanup repositories since we don't want to leak our secret key
 rm -rf /var/lib/apt/lists/*
 rm -rf /etc/apt/sources.list.d/collabora.list
