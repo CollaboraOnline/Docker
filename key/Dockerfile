@@ -13,5 +13,7 @@ RUN rm -rf /install-libreoffice.sh
 ENV domain localhost
 ENV LC_CTYPE en_US.UTF-8
 
+EXPOSE 9980
+
 # Entry point
 CMD bash start-libreoffice.sh
