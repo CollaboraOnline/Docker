@@ -5,7 +5,7 @@ To build the container first you need to build the base image and flatten it (to
 
 ```
 cd baseimage/
-docker build --build-arg SECRET_KEY=<your secret URL part from https://support.libreoffice.collabora.co.uk> -t collabora/online-base .
+docker build --build-arg SECRET_KEY=<your secret URL part from https://support.collaboraoffice.com, e.g. Example-413539ece39485afc35b4a469adfde0a279d2fd2> -t collabora/online-base .
 docker run -d collabora/online-base
 # Adjust the container id <hash>
 docker export -o /tmp/collabora-flat <hash>
