@@ -29,4 +29,4 @@ In directory "key" there is the Dockerfile to build Collabora Online image with 
 
     quay.io/egroupware/collabora-key
 
-The container is - apart from the repo url - identical to the 3.x baseimage container.
+The container is - apart from the repo url - identical to the baseimage container.
