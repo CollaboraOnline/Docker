@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 # Environment variables
 ARG REPOS
 ENV domain localhost
-ENV LC_CTYPE en_US.UTF-8
+ENV LC_CTYPE C.UTF-8
 
 # Setup scripts for Collabora Online
 ADD /scripts/install-collabora-online.sh /
