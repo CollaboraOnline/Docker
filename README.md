@@ -21,7 +21,7 @@ docker history collabora/online
 
 Do not share the secret key with anyone.
 
-start-libreoffice.sh script watches /etc/loolwsd/loolwsd.xml via inotify and forces a restart of the container, in case something changes.
+start-collabora-online.sh script watches /etc/loolwsd/loolwsd.xml via inotify and forces a restart of the container, in case something changes.
 
 ## License key enabled docker image
 

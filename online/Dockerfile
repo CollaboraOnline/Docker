@@ -10,4 +10,4 @@ EXPOSE 9980
 USER 101
 
 # Entry point
-CMD bash start-libreoffice.sh
+CMD bash start-collabora-online.sh

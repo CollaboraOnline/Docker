@@ -4,8 +4,8 @@ FROM ubuntu:18.04
 ARG SECRET_KEY
 ARG REPOS
 
-# Setup scripts for LibreOffice Online
-ADD /scripts/install-libreoffice.sh /
-ADD /scripts/start-libreoffice.sh /
-RUN bash install-libreoffice.sh
-RUN rm -rf /install-libreoffice.sh
+# Setup scripts for Collabora Online
+ADD /scripts/install-collabora-online.sh /
+ADD /scripts/start-collabora-online.sh /
+RUN bash install-collabora-online.sh
+RUN rm -rf /install-collabora-online.sh
